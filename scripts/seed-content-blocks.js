@@ -16,10 +16,10 @@ const contentBlocks = [
   { page: 'home', section: 'hero', block_type: 'text', block_key: 'subtitle', content: JSON.stringify({ text: "We deliver customized, client-centric, and impact-driven HR solutions that empower organizations to build high-performing teams and achieve sustainable growth across Africa." }), sort_order: 3 },
   { page: 'home', section: 'hero', block_type: 'button', block_key: 'primary_cta', content: JSON.stringify({ text: "Book a Consultation", link: "/book-consultation", variant: "default" }), sort_order: 4 },
   { page: 'home', section: 'hero', block_type: 'button', block_key: 'secondary_cta', content: JSON.stringify({ text: "Explore Services", link: "/services/custom-hr-solutions", variant: "outline" }), sort_order: 5 },
-  { page: 'home', section: 'hero', block_type: 'image', block_key: 'background', content: JSON.stringify({ src: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&h=800&fit=crop", alt: "ESHRM - Professional HR Consulting Team" }), sort_order: 6 },
+  { page: 'home', section: 'hero', block_type: 'image', block_key: 'background', content: JSON.stringify({ src: "team.jpg", alt: "ESHRM - Professional HR Consulting Team" }), sort_order: 6 },
   { page: 'home', section: 'hero', block_type: 'stats', block_key: 'organizations', content: JSON.stringify({ value: "20+", label: "Organizations Transformed" }), sort_order: 7 },
   { page: 'home', section: 'hero', block_type: 'stats', block_key: 'years', content: JSON.stringify({ value: "4+", label: "Years" }), sort_order: 8 },
-  { page: 'home', section: 'hero', block_type: 'trust_indicators', block_key: 'indicators', content: JSON.stringify({ indicators: ["4+ Years of Excellence", "20+ Clients Served", "2+", "98% Client Satisfaction"] }), sort_order: 9 },
+  { page: 'home', section: 'hero', block_type: 'trust_indicators', block_key: 'indicators', content: JSON.stringify({ indicators: ["4+ Years of Excellence", "20+ Clients Served", "2+ African Countries", "98% Client Satisfaction"] }), sort_order: 9 },
 
   // About Page - Hero
   { page: 'about', section: 'hero', block_type: 'text', block_key: 'badge', content: JSON.stringify({ text: "About ESHRM" }), sort_order: 1 },
@@ -30,7 +30,7 @@ const contentBlocks = [
   // About Page - Story
   { page: 'about', section: 'story', block_type: 'text', block_key: 'title', content: JSON.stringify({ text: "Our Story" }), sort_order: 1 },
   { page: 'about', section: 'story', block_type: 'text', block_key: 'content1', content: JSON.stringify({ text: "Founded in 2010, ESHRM emerged from a vision to revolutionize how African businesses approach human resource management. We recognized that the unique challenges and opportunities of the African market required HR solutions tailored to local contexts while meeting global standards." }), sort_order: 2 },
-  { page: 'about', section: 'story', block_type: 'text', block_key: 'content2', content: JSON.stringify({ text: "Over the years, we've grown from a small consultancy to a trusted partner for over 500 organizations across 2+. Our success is built on deep expertise, unwavering commitment to our clients, and a genuine passion for developing Africa's workforce." }), sort_order: 3 },
+  { page: 'about', section: 'story', block_type: 'text', block_key: 'content2', content: JSON.stringify({ text: "Over the years, we've grown from a small consultancy to a trusted partner for over 20 organizations across 2+African Countries. Our success is built on deep expertise, unwavering commitment to our clients, and a genuine passion for developing Africa's workforce." }), sort_order: 3 },
   { page: 'about', section: 'story', block_type: 'text', block_key: 'content3', content: JSON.stringify({ text: "Today, ESHRM stands as a beacon of HR excellence in Africa, helping organizations build high-performing teams, develop future leaders, and create workplaces where both people and businesses thrive." }), sort_order: 4 },
   { page: 'about', section: 'story', block_type: 'image', block_key: 'story_image', content: JSON.stringify({ src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop", alt: "ESHRM Team Collaboration" }), sort_order: 5 },
   { page: 'about', section: 'story', block_type: 'stats', block_key: 'impact_years', content: JSON.stringify({ value: "4+", label: "Years of Impact" }), sort_order: 6 },

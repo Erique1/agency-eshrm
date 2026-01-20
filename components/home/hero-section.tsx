@@ -78,7 +78,7 @@ export function HeroSection() {
     },
     background: {
       content: {
-        src: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&h=800&fit=crop",
+        src: "team.jpg",
         alt: "ESHRM - Professional HR Consulting Team"
       }
     },
@@ -99,7 +99,7 @@ export function HeroSection() {
         indicators: [
           "4+ Years of Excellence",
           "20+ Clients Served",
-          "2+",
+          "2+ African Countries",
           "98% Client Satisfaction"
         ]
       }
@@ -188,7 +188,7 @@ export function HeroSection() {
           <div className="relative">
             <div className="relative aspect-square overflow-hidden rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5">
               <img
-                src={heroContent.background?.content?.src || "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&h=800&fit=crop"}
+                src={heroContent.background?.content?.src || "team.jpg"}
                 alt={heroContent.background?.content?.alt || "ESHRM - Professional HR Consulting Team"}
                 className="absolute inset-0 h-full w-full object-cover"
               />
