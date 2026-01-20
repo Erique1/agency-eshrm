@@ -244,17 +244,11 @@ export function Footer() {
               <div className="flex items-center gap-2">
                 <img
                   src={theme === 'dark' ? '/logo.png' : '/logo-light.png'}
-                  alt={footerContent.brand_name?.content?.alt || "Logo"}
+                  alt="ESHRM Logo"
                   className="h-8 w-auto object-contain"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none'
-                    // Fallback to text if image fails
-                    const fallback = e.currentTarget.parentElement?.querySelector('.brand-text')
-                    if (fallback) (fallback as HTMLElement).style.display = 'block'
-                  }}
                 />
-                <span className="font-bold text-xl text-background brand-text" style={{ display: footerContent.brand_name?.content?.src ? 'none' : 'block' }}>
-                  {footerContent.brand_name?.content?.text || "ESHRM"}
+                <span className="font-bold text-xl text-background">
+                  ESHRM
                 </span>
               </div>
             </Link>
