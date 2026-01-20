@@ -19,10 +19,7 @@ const iconMap: Record<string, any> = {
 }
 
 export default function ServicesPage() {
-  const [services, setServices] = useState<any[]>([])
-  const [isLoading, setIsLoading] = useState(true)
-
-  // Hardcoded services data for Vercel deployment
+  // Hardcoded services data for Vercel deployment - used as default
   const hardcodedServices = [
     {
       id: 1,
@@ -96,19 +93,22 @@ export default function ServicesPage() {
     }
   ]
 
+  const [services, setServices] = useState<any[]>(hardcodedServices)
+  const [isLoading, setIsLoading] = useState(true)
+
   useEffect(() => {
     const fetchServices = async () => {
       try {
         const response = await fetch('/api/services?published=true')
         const data = await response.json()
 
-        if (data.success) {
+        if (data.success && data.data && data.data.length > 0) {
           setServices(data.data)
         }
+        // If API call succeeds but returns empty array, keep hardcoded services
       } catch (error) {
         console.error('Error fetching services:', error)
-        // Fallback to hardcoded services for Vercel
-        setServices(hardcodedServices)
+        // Keep hardcoded services as fallback
       } finally {
         setIsLoading(false)
       }
