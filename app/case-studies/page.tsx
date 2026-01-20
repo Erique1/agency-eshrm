@@ -88,7 +88,7 @@ const caseStudies = [
     testimonial:
       "ESHRM helped us build a talent engine that has fueled our expansion. We now attract top talent without the struggle.",
     testimonialAuthor: "Kwame Asante, VP Human Resources",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop",
+    image: "/images/afric.jpg",
     services: ["Talent Acquisition", "Training & Workshops"],
   },
   {

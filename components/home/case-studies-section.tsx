@@ -99,7 +99,7 @@ export function CaseStudiesSection() {
         "85% employee satisfaction improvement",
         "60% faster onboarding",
       ],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+      image: "/images/digital.jpg",
       href: "/case-studies/digital-transformation-hr",
     },
     {
@@ -107,7 +107,7 @@ export function CaseStudiesSection() {
       client: "Pan-African Manufacturing Corp",
       industry: "Manufacturing",
       results: ["35% increase in engagement", "50% reduction in turnover", "25% productivity boost"],
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop",
+      image: "/images/culture.jpg",
       href: "/case-studies/culture-transformation",
     },
     {
@@ -115,7 +115,7 @@ export function CaseStudiesSection() {
       client: "Regional Healthcare Network",
       industry: "Healthcare",
       results: ["90% participants promoted", "65% leadership readiness improvement", "75% internal promotions"],
-      image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop",
+      image: "/images/leadership.jpg",
       href: "/case-studies/leadership-development",
     },
   ]
