@@ -13,7 +13,7 @@ const caseStudies = [
     client: "Leading Fintech Company",
     industry: "Financial Services",
     challenge:
-      "Outdated HR processes causing inefficiencies and employee dissatisfaction in a rapidly growing fintech startup with 500+ employees across 5 countries.",
+      "Outdated HR processes causing inefficiencies and employee dissatisfaction in a rapidly growing fintech startup with 20+ employees across 5 countries.",
     solution:
       "Implemented a comprehensive HR digital transformation including automated workflows, self-service portals, and data-driven decision making tools.",
     results: [
@@ -170,7 +170,7 @@ export default function CaseStudiesPage() {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">500+</div>
+                <div className="text-3xl font-bold text-primary">20+</div>
                 <div className="text-sm text-muted-foreground">Projects Completed</div>
               </div>
               <div className="text-center">

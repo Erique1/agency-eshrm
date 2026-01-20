@@ -165,10 +165,10 @@ export default function AboutPage() {
     story: {
       title: { content: { text: "Our Story" } },
       content1: { content: { text: "Founded in 2010, ESHRM emerged from a vision to revolutionize how African businesses approach human resource management. We recognized that the unique challenges and opportunities of the African market required HR solutions tailored to local contexts while meeting global standards." } },
-      content2: { content: { text: "Over the years, we've grown from a small consultancy to a trusted partner for over 500 organizations across 20+ African countries. Our success is built on deep expertise, unwavering commitment to our clients, and a genuine passion for developing Africa's workforce." } },
+      content2: { content: { text: "Over the years, we've grown from a small consultancy to a trusted partner for over 500 organizations across 2+. Our success is built on deep expertise, unwavering commitment to our clients, and a genuine passion for developing Africa's workforce." } },
       content3: { content: { text: "Today, ESHRM stands as a beacon of HR excellence in Africa, helping organizations build high-performing teams, develop future leaders, and create workplaces where both people and businesses thrive." } },
       story_image: { content: { src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop", alt: "ESHRM Team Collaboration" } },
-      impact_years: { content: { value: "15+", label: "Years of Impact" } }
+      impact_years: { content: { value: "4+", label: "Years of Impact" } }
     },
     mission_vision: {
       mission_title: { content: { text: "Our Mission" } },
@@ -221,9 +221,8 @@ export default function AboutPage() {
 
   // Default stats as fallback
   const defaultStats: StatItem[] = [
-    { value: "15+", label: "Years of Excellence" },
-    { value: "500+", label: "Clients Served" },
-    { value: "20+", label: "African Countries" },
+    { value: "4+", label: "Years of Excellence" },
+    { value: "20+", label: "Clients Served" },
     { value: "98%", label: "Client Satisfaction" },
   ]
 
@@ -323,7 +322,7 @@ export default function AboutPage() {
                   </p>
                   <p>
                     {aboutContent.story?.content2?.content?.text ||
-                      "Over the years, we've grown from a small consultancy to a trusted partner for over 500 organizations across 20+ African countries. Our success is built on deep expertise, unwavering commitment to our clients, and a genuine passion for developing Africa's workforce."}
+                      "Over the years, we've grown from a small consultancy to a trusted partner for over 500 organizations across 2+. Our success is built on deep expertise, unwavering commitment to our clients, and a genuine passion for developing Africa's workforce."}
                   </p>
                   <p>
                     {aboutContent.story?.content3?.content?.text ||
@@ -338,7 +337,7 @@ export default function AboutPage() {
                   className="rounded-2xl shadow-lg"
                 />
                 <div className="absolute -bottom-6 -right-6 rounded-xl bg-primary p-6 text-primary-foreground shadow-lg">
-                  <div className="text-3xl font-bold">{aboutContent.story?.impact_years?.content?.value || "15+"}</div>
+                  <div className="text-3xl font-bold">{aboutContent.story?.impact_years?.content?.value || "4+"}</div>
                   <div className="text-sm">{aboutContent.story?.impact_years?.content?.label || "Years of Impact"}</div>
                 </div>
               </div>

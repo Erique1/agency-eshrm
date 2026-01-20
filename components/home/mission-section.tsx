@@ -52,7 +52,7 @@ export function MissionSection() {
     },
     clients: {
       content: {
-        value: "500+",
+        value: "20+",
         label: "Happy Clients"
       }
     },
@@ -114,7 +114,7 @@ export function MissionSection() {
         <div className="grid gap-8 md:grid-cols-3 mb-16">
           <div className="text-center">
             <div className="text-4xl font-bold mb-2">
-              {missionContent.clients?.content?.value || "500+"}
+              {missionContent.clients?.content?.value || "20+"}
             </div>
             <div className="text-primary-foreground/80">
               {missionContent.clients?.content?.label || "Happy Clients"}

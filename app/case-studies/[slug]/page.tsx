@@ -15,7 +15,7 @@ const caseStudies = {
     duration: "8 months",
     teamSize: "12 consultants",
     challenge:
-      "A rapidly growing fintech startup with 500+ employees across 5 countries was struggling with outdated HR processes. Manual workflows, paper-based documentation, and fragmented systems were causing significant inefficiencies, compliance risks, and employee frustration. The HR team spent 70% of their time on administrative tasks, leaving little room for strategic initiatives.",
+      "A rapidly growing fintech startup with 20+ employees across 5 countries was struggling with outdated HR processes. Manual workflows, paper-based documentation, and fragmented systems were causing significant inefficiencies, compliance risks, and employee frustration. The HR team spent 70% of their time on administrative tasks, leaving little room for strategic initiatives.",
     solution:
       "We implemented a comprehensive HR digital transformation program that included: automated workflow systems for approvals and requests, cloud-based HRIS implementation, employee self-service portals, integrated performance and learning management systems, and advanced HR analytics dashboards. The solution was deployed in phases across all 5 countries with thorough change management support.",
     approach: [

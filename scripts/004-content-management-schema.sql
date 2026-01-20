@@ -46,9 +46,9 @@ INSERT INTO content_blocks (page, section, block_type, block_key, content, sort_
 ('home', 'hero', 'button', 'primary_cta', '{"text": "Book a Consultation", "link": "/book-consultation", "variant": "default"}', 4),
 ('home', 'hero', 'button', 'secondary_cta', '{"text": "Explore Services", "link": "/services/custom-hr-solutions", "variant": "outline"}', 5),
 ('home', 'hero', 'image', 'background', '{"src": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&h=800&fit=crop", "alt": "ESHRM - Professional HR Consulting Team"}', 6),
-('home', 'hero', 'stats', 'organizations', '{"value": "500+", "label": "Organizations Transformed"}', 7),
-('home', 'hero', 'stats', 'years', '{"value": "15+", "label": "Years"}', 8),
-('home', 'hero', 'trust_indicators', 'indicators', '{"indicators": ["15+ Years of Excellence", "500+ Clients Served", "20+ African Countries", "98% Client Satisfaction"]}', 9),
+('home', 'hero', 'stats', 'organizations', '{"value": "20+", "label": "Organizations Transformed"}', 7),
+('home', 'hero', 'stats', 'years', '{"value": "4+", "label": "Years"}', 8),
+('home', 'hero', 'trust_indicators', 'indicators', '{"indicators": ["4+ Years of Excellence", "20+ Clients Served", "2+", "98% Client Satisfaction"]}', 9),
 
 -- Services Section
 ('home', 'services', 'text', 'title', '{"text": "Our Services"}', 1),
@@ -58,7 +58,7 @@ INSERT INTO content_blocks (page, section, block_type, block_key, content, sort_
 -- Why Choose Us Section
 ('home', 'why_choose_us', 'text', 'title', '{"text": "Why Choose ESHRM"}', 1),
 ('home', 'why_choose_us', 'text', 'subtitle', '{"text": "Partner with Africa''s leading HR consulting firm"}', 2),
-('home', 'why_choose_us', 'feature', 'experience', '{"title": "15+ Years Experience", "description": "Decades of expertise in African HR consulting"}', 3),
+('home', 'why_choose_us', 'feature', 'experience', '{"title": "4+ Years Experience", "description": "Decades of expertise in African HR consulting"}', 3),
 ('home', 'why_choose_us', 'feature', 'expertise', '{"title": "Local Expertise", "description": "Deep understanding of African business landscape"}', 4),
 ('home', 'why_choose_us', 'feature', 'results', '{"title": "Proven Results", "description": "Track record of successful transformations"}', 5),
 
@@ -85,7 +85,7 @@ INSERT INTO content_blocks (page, section, block_type, block_key, content, sort_
 -- Mission Section
 ('home', 'mission', 'text', 'title', '{"text": "Our Mission"}', 1),
 ('home', 'mission', 'text', 'content', '{"text": "To empower African businesses with world-class HR solutions that drive sustainable growth and create high-performing teams."}', 2),
-('home', 'mission', 'stats', 'clients', '{"value": "500+", "label": "Happy Clients"}', 3),
+('home', 'mission', 'stats', 'clients', '{"value": "20+", "label": "Happy Clients"}', 3),
 ('home', 'mission', 'stats', 'countries', '{"value": "20+", "label": "African Countries"}', 4),
 ('home', 'mission', 'stats', 'satisfaction', '{"value": "98%", "label": "Client Satisfaction"}', 5),
 
@@ -122,10 +122,10 @@ INSERT INTO content_blocks (page, section, block_type, block_key, content, sort_
 -- Story Section
 ('about', 'story', 'text', 'title', '{"text": "Our Story"}', 1),
 ('about', 'story', 'text', 'content1', '{"text": "Founded in 2010, ESHRM emerged from a vision to revolutionize how African businesses approach human resource management. We recognized that the unique challenges and opportunities of the African market required HR solutions tailored to local contexts while meeting global standards."}', 2),
-('about', 'story', 'text', 'content2', '{"text": "Over the years, we''ve grown from a small consultancy to a trusted partner for over 500 organizations across 20+ African countries. Our success is built on deep expertise, unwavering commitment to our clients, and a genuine passion for developing Africa''s workforce."}', 3),
+('about', 'story', 'text', 'content2', '{"text": "Over the years, we''ve grown from a small consultancy to a trusted partner for over 500 organizations across 2+. Our success is built on deep expertise, unwavering commitment to our clients, and a genuine passion for developing Africa''s workforce."}', 3),
 ('about', 'story', 'text', 'content3', '{"text": "Today, ESHRM stands as a beacon of HR excellence in Africa, helping organizations build high-performing teams, develop future leaders, and create workplaces where both people and businesses thrive."}', 4),
 ('about', 'story', 'image', 'story_image', '{"src": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop", "alt": "ESHRM Team Collaboration"}', 5),
-('about', 'story', 'stats', 'impact_years', '{"value": "15+", "label": "Years of Impact"}', 6),
+('about', 'story', 'stats', 'impact_years', '{"value": "4+", "label": "Years of Impact"}', 6),
 
 -- Mission & Vision Section
 ('about', 'mission_vision', 'text', 'mission_title', '{"text": "Our Mission"}', 1),
@@ -142,8 +142,8 @@ INSERT INTO content_blocks (page, section, block_type, block_key, content, sort_
 ('about', 'values', 'feature', 'collaboration', '{"title": "Collaboration", "description": "We work as true partners with our clients, fostering teamwork and shared success.", "icon": "Users"}', 6),
 
 -- Stats Section
-('about', 'stats', 'stats', 'experience', '{"value": "15+", "label": "Years of Excellence"}', 1),
-('about', 'stats', 'stats', 'clients', '{"value": "500+", "label": "Clients Served"}', 2),
+('about', 'stats', 'stats', 'experience', '{"value": "4+", "label": "Years of Excellence"}', 1),
+('about', 'stats', 'stats', 'clients', '{"value": "20+", "label": "Clients Served"}', 2),
 ('about', 'stats', 'stats', 'countries', '{"value": "20+", "label": "African Countries"}', 3),
 ('about', 'stats', 'stats', 'satisfaction', '{"value": "98%", "label": "Client Satisfaction"}', 4),
 

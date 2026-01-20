@@ -101,7 +101,7 @@ export function FAQSection() {
     {
       question: "Can you help with compliance across multiple African countries?",
       answer:
-        "Absolutely. We have expertise in labor laws and HR regulations across 20+ African countries. We help organizations navigate complex multi-country compliance requirements while maintaining consistent HR practices.",
+        "Absolutely. We have expertise in labor laws and HR regulations across 2+. We help organizations navigate complex multi-country compliance requirements while maintaining consistent HR practices.",
     },
     {
       question: "What does the consultation process look like?",

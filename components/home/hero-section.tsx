@@ -84,22 +84,22 @@ export function HeroSection() {
     },
     organizations: {
       content: {
-        value: "500+",
+        value: "20+",
         label: "Organizations Transformed"
       }
     },
     years: {
       content: {
-        value: "15+",
+        value: "4+",
         label: "Years"
       }
     },
     indicators: {
       content: {
         indicators: [
-          "15+ Years of Excellence",
-          "500+ Clients Served",
-          "20+ African Countries",
+          "4+ Years of Excellence",
+          "20+ Clients Served",
+          "2+",
           "98% Client Satisfaction"
         ]
       }
@@ -196,7 +196,7 @@ export function HeroSection() {
             {/* Floating Stats Card */}
             <div className="absolute -bottom-6 -left-6 rounded-xl bg-card p-6 shadow-lg border">
               <div className="text-3xl font-bold text-primary">
-                {heroContent.organizations?.content?.value || "500+"}
+                {heroContent.organizations?.content?.value || "20+"}
               </div>
               <div className="text-sm text-muted-foreground">
                 {heroContent.organizations?.content?.label || "Organizations Transformed"}
@@ -205,7 +205,7 @@ export function HeroSection() {
             {/* Floating Badge */}
             <div className="absolute -top-4 -right-4 rounded-xl bg-primary p-4 shadow-lg">
               <div className="text-xl font-bold text-primary-foreground">
-                {heroContent.years?.content?.value || "15+"}
+                {heroContent.years?.content?.value || "4+"}
               </div>
               <div className="text-xs text-primary-foreground/80">
                 {heroContent.years?.content?.label || "Years"}

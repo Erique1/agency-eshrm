@@ -17,9 +17,9 @@ const contentBlocks = [
   { page: 'home', section: 'hero', block_type: 'button', block_key: 'primary_cta', content: JSON.stringify({ text: "Book a Consultation", link: "/book-consultation", variant: "default" }), sort_order: 4 },
   { page: 'home', section: 'hero', block_type: 'button', block_key: 'secondary_cta', content: JSON.stringify({ text: "Explore Services", link: "/services/custom-hr-solutions", variant: "outline" }), sort_order: 5 },
   { page: 'home', section: 'hero', block_type: 'image', block_key: 'background', content: JSON.stringify({ src: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&h=800&fit=crop", alt: "ESHRM - Professional HR Consulting Team" }), sort_order: 6 },
-  { page: 'home', section: 'hero', block_type: 'stats', block_key: 'organizations', content: JSON.stringify({ value: "500+", label: "Organizations Transformed" }), sort_order: 7 },
-  { page: 'home', section: 'hero', block_type: 'stats', block_key: 'years', content: JSON.stringify({ value: "15+", label: "Years" }), sort_order: 8 },
-  { page: 'home', section: 'hero', block_type: 'trust_indicators', block_key: 'indicators', content: JSON.stringify({ indicators: ["15+ Years of Excellence", "500+ Clients Served", "20+ African Countries", "98% Client Satisfaction"] }), sort_order: 9 },
+  { page: 'home', section: 'hero', block_type: 'stats', block_key: 'organizations', content: JSON.stringify({ value: "20+", label: "Organizations Transformed" }), sort_order: 7 },
+  { page: 'home', section: 'hero', block_type: 'stats', block_key: 'years', content: JSON.stringify({ value: "4+", label: "Years" }), sort_order: 8 },
+  { page: 'home', section: 'hero', block_type: 'trust_indicators', block_key: 'indicators', content: JSON.stringify({ indicators: ["4+ Years of Excellence", "20+ Clients Served", "2+", "98% Client Satisfaction"] }), sort_order: 9 },
 
   // About Page - Hero
   { page: 'about', section: 'hero', block_type: 'text', block_key: 'badge', content: JSON.stringify({ text: "About ESHRM" }), sort_order: 1 },
@@ -30,10 +30,10 @@ const contentBlocks = [
   // About Page - Story
   { page: 'about', section: 'story', block_type: 'text', block_key: 'title', content: JSON.stringify({ text: "Our Story" }), sort_order: 1 },
   { page: 'about', section: 'story', block_type: 'text', block_key: 'content1', content: JSON.stringify({ text: "Founded in 2010, ESHRM emerged from a vision to revolutionize how African businesses approach human resource management. We recognized that the unique challenges and opportunities of the African market required HR solutions tailored to local contexts while meeting global standards." }), sort_order: 2 },
-  { page: 'about', section: 'story', block_type: 'text', block_key: 'content2', content: JSON.stringify({ text: "Over the years, we've grown from a small consultancy to a trusted partner for over 500 organizations across 20+ African countries. Our success is built on deep expertise, unwavering commitment to our clients, and a genuine passion for developing Africa's workforce." }), sort_order: 3 },
+  { page: 'about', section: 'story', block_type: 'text', block_key: 'content2', content: JSON.stringify({ text: "Over the years, we've grown from a small consultancy to a trusted partner for over 500 organizations across 2+. Our success is built on deep expertise, unwavering commitment to our clients, and a genuine passion for developing Africa's workforce." }), sort_order: 3 },
   { page: 'about', section: 'story', block_type: 'text', block_key: 'content3', content: JSON.stringify({ text: "Today, ESHRM stands as a beacon of HR excellence in Africa, helping organizations build high-performing teams, develop future leaders, and create workplaces where both people and businesses thrive." }), sort_order: 4 },
   { page: 'about', section: 'story', block_type: 'image', block_key: 'story_image', content: JSON.stringify({ src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop", alt: "ESHRM Team Collaboration" }), sort_order: 5 },
-  { page: 'about', section: 'story', block_type: 'stats', block_key: 'impact_years', content: JSON.stringify({ value: "15+", label: "Years of Impact" }), sort_order: 6 },
+  { page: 'about', section: 'story', block_type: 'stats', block_key: 'impact_years', content: JSON.stringify({ value: "4+", label: "Years of Impact" }), sort_order: 6 },
 
   // About Page - Mission & Vision
   { page: 'about', section: 'mission_vision', block_type: 'text', block_key: 'mission_title', content: JSON.stringify({ text: "Our Mission" }), sort_order: 1 },
@@ -124,7 +124,7 @@ const contentBlocks = [
   { page: 'home', section: 'faq', block_type: 'faq', block_key: 'faq_2', content: JSON.stringify({ question: "How long does a typical engagement last?", answer: "Engagement duration varies based on scope and complexity. A focused project like policy development might take 4-8 weeks, while comprehensive organizational transformation can span 6-12 months. We'll provide a clear timeline during our initial consultation." }), sort_order: 5 },
   { page: 'home', section: 'faq', block_type: 'faq', block_key: 'faq_3', content: JSON.stringify({ question: "Do you work with small businesses or only large corporations?", answer: "We work with organizations of all sizes. Whether you're a growing startup needing to establish HR foundations or a large enterprise seeking transformation, we tailor our approach and pricing to match your needs and budget." }), sort_order: 6 },
   { page: 'home', section: 'faq', block_type: 'faq', block_key: 'faq_4', content: JSON.stringify({ question: "What makes ESHRM different from other HR consultants?", answer: "Our deep African market expertise, client-centric approach, and commitment to sustainable results set us apart. We don't just deliver recommendations—we partner with you through implementation and beyond to ensure lasting success." }), sort_order: 7 },
-  { page: 'home', section: 'faq', block_type: 'faq', block_key: 'faq_5', content: JSON.stringify({ question: "Can you help with compliance across multiple African countries?", answer: "Absolutely. We have expertise in labor laws and HR regulations across 20+ African countries. We help organizations navigate complex multi-country compliance requirements while maintaining consistent HR practices." }), sort_order: 8 },
+  { page: 'home', section: 'faq', block_type: 'faq', block_key: 'faq_5', content: JSON.stringify({ question: "Can you help with compliance across multiple African countries?", answer: "Absolutely. We have expertise in labor laws and HR regulations across 2+. We help organizations navigate complex multi-country compliance requirements while maintaining consistent HR practices." }), sort_order: 8 },
   { page: 'home', section: 'faq', block_type: 'faq', block_key: 'faq_6', content: JSON.stringify({ question: "What does the consultation process look like?", answer: "It starts with a complimentary discovery call where we learn about your challenges and goals. From there, we propose a tailored engagement plan. Once agreed, we begin with a thorough assessment before developing and implementing solutions." }), sort_order: 9 },
 
   // Home Page - CTA Section
@@ -149,8 +149,8 @@ const contentBlocks = [
   { page: 'about', section: 'team', block_type: 'team_member', block_key: 'team_member_3', content: JSON.stringify({ name: "Zainab Ibrahim", role: "Head of Training & Development", bio: "A certified master trainer with expertise in leadership development, Zainab has designed and delivered programs for over 10,000 professionals.", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face" }), sort_order: 5 },
 
   // About Page - Stats Section
-  { page: 'about', section: 'stats', block_type: 'stats_item', block_key: 'stat_1', content: JSON.stringify({ value: "15+", label: "Years of Excellence" }), sort_order: 1 },
-  { page: 'about', section: 'stats', block_type: 'stats_item', block_key: 'stat_2', content: JSON.stringify({ value: "500+", label: "Clients Served" }), sort_order: 2 },
+  { page: 'about', section: 'stats', block_type: 'stats_item', block_key: 'stat_1', content: JSON.stringify({ value: "4+", label: "Years of Excellence" }), sort_order: 1 },
+  { page: 'about', section: 'stats', block_type: 'stats_item', block_key: 'stat_2', content: JSON.stringify({ value: "20+", label: "Clients Served" }), sort_order: 2 },
   { page: 'about', section: 'stats', block_type: 'stats_item', block_key: 'stat_3', content: JSON.stringify({ value: "20+", label: "African Countries" }), sort_order: 3 },
   { page: 'about', section: 'stats', block_type: 'stats_item', block_key: 'stat_4', content: JSON.stringify({ value: "98%", label: "Client Satisfaction" }), sort_order: 4 },
 

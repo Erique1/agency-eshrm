@@ -672,7 +672,7 @@ export default function AdminPages() {
                 id="value"
                 value={content.value || ''}
                 onChange={(e) => handleContentChange('value', e.target.value)}
-                placeholder="e.g., 500+, 98%, $2M"
+                placeholder="e.g., 20+, 98%, $2M"
               />
             </div>
             <div>
