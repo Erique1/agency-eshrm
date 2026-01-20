@@ -16,7 +16,7 @@ const contentBlocks = [
   { page: 'home', section: 'hero', block_type: 'text', block_key: 'subtitle', content: JSON.stringify({ text: "We deliver customized, client-centric, and impact-driven HR solutions that empower organizations to build high-performing teams and achieve sustainable growth across Africa." }), sort_order: 3 },
   { page: 'home', section: 'hero', block_type: 'button', block_key: 'primary_cta', content: JSON.stringify({ text: "Book a Consultation", link: "/book-consultation", variant: "default" }), sort_order: 4 },
   { page: 'home', section: 'hero', block_type: 'button', block_key: 'secondary_cta', content: JSON.stringify({ text: "Explore Services", link: "/services/custom-hr-solutions", variant: "outline" }), sort_order: 5 },
-  { page: 'home', section: 'hero', block_type: 'image', block_key: 'background', content: JSON.stringify({ src: "team.jpg", alt: "ESHRM - Professional HR Consulting Team" }), sort_order: 6 },
+  { page: 'home', section: 'hero', block_type: 'image', block_key: 'background', content: JSON.stringify({ src: "images/team.jpg", alt: "ESHRM - Professional HR Consulting Team" }), sort_order: 6 },
   { page: 'home', section: 'hero', block_type: 'stats', block_key: 'organizations', content: JSON.stringify({ value: "20+", label: "Organizations Transformed" }), sort_order: 7 },
   { page: 'home', section: 'hero', block_type: 'stats', block_key: 'years', content: JSON.stringify({ value: "4+", label: "Years" }), sort_order: 8 },
   { page: 'home', section: 'hero', block_type: 'trust_indicators', block_key: 'indicators', content: JSON.stringify({ indicators: ["4+ Years of Excellence", "20+ Clients Served", "2+ African Countries", "98% Client Satisfaction"] }), sort_order: 9 },

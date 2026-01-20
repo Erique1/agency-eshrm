@@ -78,7 +78,7 @@ export function HeroSection() {
     },
     background: {
       content: {
-        src: "team.jpg",
+        src: "images/team.jpg",
         alt: "ESHRM - Professional HR Consulting Team"
       }
     },
@@ -188,7 +188,7 @@ export function HeroSection() {
           <div className="relative">
             <div className="relative aspect-square overflow-hidden rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5">
               <img
-                src={heroContent.background?.content?.src || "team.jpg"}
+                src={heroContent.background?.content?.src || "images/team.jpg"}
                 alt={heroContent.background?.content?.alt || "ESHRM - Professional HR Consulting Team"}
                 className="absolute inset-0 h-full w-full object-cover"
               />

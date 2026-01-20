@@ -45,7 +45,7 @@ INSERT INTO content_blocks (page, section, block_type, block_key, content, sort_
 ('home', 'hero', 'text', 'subtitle', '{"text": "We deliver customized, client-centric, and impact-driven HR solutions that empower organizations to build high-performing teams and achieve sustainable growth across Africa."}', 3),
 ('home', 'hero', 'button', 'primary_cta', '{"text": "Book a Consultation", "link": "/book-consultation", "variant": "default"}', 4),
 ('home', 'hero', 'button', 'secondary_cta', '{"text": "Explore Services", "link": "/services/custom-hr-solutions", "variant": "outline"}', 5),
-('home', 'hero', 'image', 'background', '{"src": "team.jpg", "alt": "ESHRM - Professional HR Consulting Team"}', 6),
+('home', 'hero', 'image', 'background', '{"src": "images/team.jpg", "alt": "ESHRM - Professional HR Consulting Team"}', 6),
 ('home', 'hero', 'stats', 'organizations', '{"value": "20+", "label": "Organizations Transformed"}', 7),
 ('home', 'hero', 'stats', 'years', '{"value": "4+", "label": "Years"}', 8),
 ('home', 'hero', 'trust_indicators', 'indicators', '{"indicators": ["4+ Years of Excellence", "20+ Clients Served", "2+", "98% Client Satisfaction"]}', 9),
