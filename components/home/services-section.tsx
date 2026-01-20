@@ -28,6 +28,80 @@ export function ServicesSection() {
   const [services, setServices] = useState<any[]>([])
   const [isLoading, setIsLoading] = useState(true)
 
+  // Hardcoded services data for Vercel deployment
+  const hardcodedServices = [
+    {
+      id: 1,
+      title: "Custom HR Solutions",
+      slug: "custom-hr-solutions",
+      description: "Tailored HR strategies designed specifically for your organization's unique needs and culture.",
+      long_description: "We develop comprehensive HR solutions that align with your business objectives, culture, and growth trajectory. Our team works closely with you to understand your challenges and create customized strategies that drive results.",
+      icon: "settings",
+      features: ["HR Strategy Development", "Process Optimization", "HR Technology Implementation", "Compliance Management"],
+      published: true
+    },
+    {
+      id: 2,
+      title: "Organizational Development",
+      slug: "organizational-development",
+      description: "Transform your organization's structure, culture, and capabilities for sustainable growth.",
+      long_description: "Our organizational development services help you build a high-performing organization. We focus on culture transformation, change management, and leadership development to drive sustainable growth.",
+      icon: "building",
+      features: ["Culture Transformation", "Change Management", "Leadership Development", "Team Building"],
+      published: true
+    },
+    {
+      id: 3,
+      title: "Training & Workshops",
+      slug: "training-workshops",
+      description: "Empower your workforce with cutting-edge training programs and interactive workshops.",
+      long_description: "We design and deliver impactful training programs that enhance skills, boost productivity, and foster professional growth. Our workshops are interactive, practical, and tailored to your industry.",
+      icon: "graduation-cap",
+      features: ["Leadership Training", "Skills Development", "Compliance Training", "Team Workshops"],
+      published: true
+    },
+    {
+      id: 4,
+      title: "HR Policy Development",
+      slug: "hr-policy-development",
+      description: "Create robust HR policies that ensure compliance and support your organizational goals.",
+      long_description: "We help you develop comprehensive HR policies that are compliant with local regulations, aligned with best practices, and supportive of your organizational culture and goals.",
+      icon: "file-text",
+      features: ["Policy Framework Design", "Employee Handbook Creation", "Compliance Review", "Policy Implementation"],
+      published: true
+    },
+    {
+      id: 5,
+      title: "Performance Management",
+      slug: "performance-management",
+      description: "Implement effective performance systems that drive accountability and excellence.",
+      long_description: "Our performance management solutions help you establish clear expectations, provide meaningful feedback, and create a culture of continuous improvement and accountability.",
+      icon: "chart-bar",
+      features: ["Performance Framework Design", "KPI Development", "360-Degree Feedback", "Performance Reviews"],
+      published: true
+    },
+    {
+      id: 6,
+      title: "Talent Acquisition",
+      slug: "talent-acquisition",
+      description: "Attract, assess, and acquire top talent that drives your business forward.",
+      long_description: "We help you build a strong talent pipeline through strategic recruitment, employer branding, and selection processes that identify candidates who will thrive in your organization.",
+      icon: "users",
+      features: ["Recruitment Strategy", "Employer Branding", "Assessment Centers", "Onboarding Programs"],
+      published: true
+    },
+    {
+      id: 7,
+      title: "NSSA Registration & Returns",
+      slug: "nssa-registration-returns",
+      description: "Complete NSSA registration and ensure accurate, timely statutory returns for your organization.",
+      long_description: "We handle all aspects of NSSA compliance including initial registration, monthly/quarterly returns, employee registration, and ensuring your organization remains fully compliant with Zimbabwe's social security requirements.",
+      icon: "clipboard-list",
+      features: ["NSSA Registration", "Monthly Returns", "Employee Registration", "Compliance Audits", "Statutory Reporting"],
+      published: true
+    }
+  ]
+
   useEffect(() => {
     const fetchServicesContent = async () => {
       try {
@@ -46,15 +120,12 @@ export function ServicesSection() {
           setContent(contentMap)
         }
 
-        // Fetch actual services from database
-        const servicesResponse = await fetch('/api/services?published=true')
-        const servicesData = await servicesResponse.json()
-
-        if (servicesData.success) {
-          setServices(servicesData.data) // Show all published services
-        }
+        // Use hardcoded services for Vercel deployment
+        setServices(hardcodedServices)
       } catch (error) {
         console.error('Error fetching services content:', error)
+        // Fallback to hardcoded services
+        setServices(hardcodedServices)
       } finally {
         setIsLoading(false)
       }
