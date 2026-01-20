@@ -3,6 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useEffect, useState } from "react"
+import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Linkedin, Twitter, Facebook, Mail, Phone, MapPin } from "lucide-react"
@@ -37,6 +38,7 @@ interface ContactInfoData {
 }
 
 export function Footer() {
+  const { theme } = useTheme()
   const [content, setContent] = useState<FooterContent>({})
   const [services, setServices] = useState<LinkData[]>([])
   const [quickLinks, setQuickLinks] = useState<LinkData[]>([])
@@ -240,21 +242,17 @@ export function Footer() {
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
               <div className="flex items-center gap-2">
-                {footerContent.brand_name?.content?.src ? (
-                  <img
-                    src="/logo-light.png"
-                    alt={footerContent.brand_name.content.alt || "Logo"}
-                    className="h-10 w-auto object-contain"
-                    onError={(e) => {
-                      // Fallback to regular logo if light logo fails
-                      e.currentTarget.src = footerContent.brand_name.content.src || "/logo.png"
-                    }}
-                  />
-                ) : (
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold text-lg">
-                    E
-                  </div>
-                )}
+                <img
+                  src={theme === 'dark' ? '/logo.png' : '/logo-light.png'}
+                  alt={footerContent.brand_name?.content?.alt || "Logo"}
+                  className="h-8 w-auto object-contain"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none'
+                    // Fallback to text if image fails
+                    const fallback = e.currentTarget.parentElement?.querySelector('.brand-text')
+                    if (fallback) (fallback as HTMLElement).style.display = 'block'
+                  }}
+                />
                 <span className="font-bold text-xl text-background brand-text" style={{ display: footerContent.brand_name?.content?.src ? 'none' : 'block' }}>
                   {footerContent.brand_name?.content?.text || "ESHRM"}
                 </span>

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
+import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
 import {
   NavigationMenu,
@@ -37,6 +38,7 @@ interface CTAButton {
 }
 
 export function Header() {
+  const { theme } = useTheme()
   const [content, setContent] = useState<HeaderContent>({})
   const [navigation, setNavigation] = useState<NavItem[]>([])
   const [ctaButtons, setCtaButtons] = useState<CTAButton[]>([])
@@ -148,24 +150,18 @@ export function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2">
           <div className="flex items-center gap-2">
-            {headerContent.brand_name?.content?.src ? (
-              <img
-                src={headerContent.brand_name.content.src}
-                alt={headerContent.brand_name.content.alt || "Logo"}
-                className="h-10 w-auto object-contain"
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none'
-                  // Fallback to text if image fails
-                  const fallback = e.currentTarget.parentElement?.querySelector('.brand-text')
-                  if (fallback) (fallback as HTMLElement).style.display = 'block'
-                }}
-              />
-            ) : (
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold text-lg">
-                E
-              </div>
-            )}
-            <span className="font-bold text-xl brand-text" style={{ display: headerContent.brand_name?.content?.src ? 'none' : 'block' }}>
+            <img
+              src={theme === 'dark' ? '/logo-light.png' : '/logo.png'}
+              alt={headerContent.brand_name?.content?.alt || "Logo"}
+              className="h-8 w-auto object-contain"
+              onError={(e) => {
+                e.currentTarget.style.display = 'none'
+                // Fallback to text if image fails
+                const fallback = e.currentTarget.parentElement?.querySelector('.brand-text')
+                if (fallback) (fallback as HTMLElement).style.display = 'block'
+              }}
+            />
+            <span className="font-bold text-xl brand-text" style={{ display: 'none' }}>
               {headerContent.brand_name?.content?.text || "ESHRM"}
             </span>
           </div>
