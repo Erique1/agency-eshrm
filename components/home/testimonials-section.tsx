@@ -91,15 +91,15 @@ export function TestimonialsSection() {
       company: "July Motion Pvt Ltd",
       content:
         "ESHRM transformed our HR processes in Harare, helping us build a stronger team foundation. Their local expertise and understanding of Zimbabwe's business environment was invaluable for our growth in the motion industry.",
-      image: "/images/team.jpg",
+      image: "/placeholder.svg",
     },
     {
       name: "Mr Taruvinga",
       role: "Director",
       company: "Strange Love Enterprises",
       content:
-        "Working with ESHRM has been a game-changer for our Zimbabwe-based operations. Their tailored HR solutions helped us navigate the unique challenges of our industry while maintaining compliance with local regulations.",
-      image: "/images/culture.jpg",
+        "Working with ESHRM has been a game-changer for our Zimbabwe-based operations. Their tailored HR solutions helped us navigate the unique challenges of our retail business while maintaining compliance with local regulations.",
+      image: "/placeholder.svg",
     },
     {
       name: "Dr Kamunda",
@@ -107,7 +107,7 @@ export function TestimonialsSection() {
       company: "Montague Radiology Centre",
       content:
         "ESHRM's expertise in healthcare HR management was exactly what we needed. They helped us develop policies that support our medical staff while ensuring we meet Zimbabwe's healthcare standards.",
-      image: "/images/digital.jpg",
+      image: "/placeholder.svg",
     },
     {
       name: "Mr Manyemba",
@@ -115,7 +115,7 @@ export function TestimonialsSection() {
       company: "Brooklyn Bright Construction",
       content:
         "The HR training programs from ESHRM have significantly improved our project management capabilities. Their understanding of Zimbabwe's construction sector helped us build a more skilled workforce.",
-      image: "/images/leadership.jpg",
+      image: "/placeholder.svg",
     },
     {
       name: "Mr Masawi",
@@ -123,7 +123,7 @@ export function TestimonialsSection() {
       company: "Lyndel House College",
       content:
         "ESHRM provided outstanding support for our educational institution. Their HR solutions helped us attract and retain quality teaching staff, contributing to the academic excellence at Lyndel House College.",
-      image: "/images/afric.jpg",
+      image: "/placeholder.svg",
     },
   ]
 
