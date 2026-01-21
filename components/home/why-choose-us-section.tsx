@@ -110,7 +110,7 @@ export function WhyChooseUsSection() {
       icon: "trending-up",
       title: "Proven Track Record",
       description:
-        "With over 500 successful client engagements and a 98% satisfaction rate, our results speak for themselves. We deliver measurable outcomes that drive real business value.",
+        "With over 20 successful client engagements and a 98% satisfaction rate, our results speak for themselves. We deliver measurable outcomes that drive real business value.",
     },
     {
       icon: "handshake",
