@@ -9,6 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
 import { Quote } from "lucide-react"
 import type { ContentBlock } from "@/lib/types"
 
@@ -187,17 +188,22 @@ export function TestimonialsSection() {
           </p>
         </div>
 
-        <div className="relative max-w-4xl mx-auto">
+        <div className="relative max-w-6xl mx-auto">
           <Carousel
             opts={{
               align: "start",
               loop: true,
             }}
+            plugins={[
+              Autoplay({
+                delay: 4000,
+              }),
+            ]}
             className="w-full"
           >
             <CarouselContent>
               {displayTestimonials.map((testimonial, index) => (
-                <CarouselItem key={testimonial.name || index} className="md:basis-1/2 lg:basis-1/3">
+                <CarouselItem key={testimonial.name || index} className="basis-1/4">
                   <div className="p-1">
                     <Card className="relative">
                       <CardContent className="p-6 pt-8">
