@@ -165,7 +165,7 @@ export default function AboutPage() {
     story: {
       title: { content: { text: "Our Story" } },
       content1: { content: { text: "Founded in 2010, ESHRM emerged from a vision to revolutionize how African businesses approach human resource management. We recognized that the unique challenges and opportunities of the African market required HR solutions tailored to local contexts while meeting global standards." } },
-      content2: { content: { text: "Over the years, we've grown from a small consultancy to a trusted partner for over 20 organizations across 2+ African Countries. Our success is built on deep expertise, unwavering commitment to our clients, and a genuine passion for developing Africa's workforce." } },
+      content2: { content: { text: "Over the years, we've grown from a small consultancy to a trusted partner for more than 20 companies in Zimbabwe. Our success is built on deep expertise, unwavering commitment to our clients, and a genuine passion for developing Zimbabwe's workforce." } },
       content3: { content: { text: "Today, ESHRM stands as a beacon of HR excellence in Africa, helping organizations build high-performing teams, develop future leaders, and create workplaces where both people and businesses thrive." } },
       story_image: { content: { src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop", alt: "ESHRM Team Collaboration" } },
       impact_years: { content: { value: "4+", label: "Years of Impact" } }
@@ -182,8 +182,8 @@ export default function AboutPage() {
       description1: { content: { text: "Our African heritage gives us unique insight into the opportunities and challenges facing businesses on the continent. We understand the diverse regulatory landscapes, cultural nuances, and market dynamics that shape HR practices across different regions." } },
       description2: { content: { text: "From Harare to Nairobi, Johannesburg to Accra, we've helped organizations navigate complex HR challenges while building workforces ready for the future. Our pan-African network ensures we can support your business wherever you operate." } },
       image: { content: { src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop", alt: "ESHRM Africa Coverage" } },
-      countries_stat: { content: { value: "20+", label: "Countries Served" } },
-      sectors_stat: { content: { value: "50+", label: "Industry Sectors" } }
+      countries_stat: { content: { value: "1", label: "Country Served" } },
+      sectors_stat: { content: { value: "20+", label: "Companies Served" } }
     },
     cta: {
       title: { content: { text: "Ready to Partner with Us?" } },
