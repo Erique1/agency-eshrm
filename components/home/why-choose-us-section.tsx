@@ -84,7 +84,7 @@ export function WhyChooseUsSection() {
     },
     image: {
       content: {
-        src: "images/team.jpg",
+        src: "/professional-consulting-meeting-diverse-team.jpg",
         alt: "ESHRM Consulting Team at Work"
       }
     }
@@ -168,7 +168,7 @@ export function WhyChooseUsSection() {
             </p>
             <div className="relative aspect-video overflow-hidden rounded-xl">
               <img
-                src={whyChooseUsContent.image?.content?.src || "images/team.jpg"}
+                src={whyChooseUsContent.image?.content?.src || "/images/team.jpg"}
                 alt={whyChooseUsContent.image?.content?.alt || "ESHRM Consulting Team at Work"}
                 className="h-full w-full object-cover"
               />
