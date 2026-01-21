@@ -2,6 +2,13 @@
 
 import { useEffect, useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 import { Quote } from "lucide-react"
 import type { ContentBlock } from "@/lib/types"
 
@@ -180,27 +187,43 @@ export function TestimonialsSection() {
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {displayTestimonials.map((testimonial, index) => (
-            <Card key={testimonial.name || index} className="relative">
-              <CardContent className="p-6 pt-8">
-                <Quote className="absolute top-4 right-4 h-8 w-8 text-primary/20" />
-                <p className="mb-6 text-muted-foreground italic">"{testimonial.content}"</p>
-                <div className="flex items-center gap-4">
-                  <img
-                    src={testimonial.image || "/placeholder.svg"}
-                    alt={testimonial.name}
-                    className="h-12 w-12 rounded-full object-cover"
-                  />
-                  <div>
-                    <div className="font-semibold">{testimonial.name}</div>
-                    <div className="text-sm text-muted-foreground">{testimonial.role}</div>
-                    <div className="text-sm text-primary">{testimonial.company}</div>
+        <div className="relative max-w-4xl mx-auto">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {displayTestimonials.map((testimonial, index) => (
+                <CarouselItem key={testimonial.name || index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="p-1">
+                    <Card className="relative">
+                      <CardContent className="p-6 pt-8">
+                        <Quote className="absolute top-4 right-4 h-8 w-8 text-primary/20" />
+                        <p className="mb-6 text-muted-foreground italic">"{testimonial.content}"</p>
+                        <div className="flex items-center gap-4">
+                          <img
+                            src={testimonial.image || "/placeholder.svg"}
+                            alt={testimonial.name}
+                            className="h-12 w-12 rounded-full object-cover"
+                          />
+                          <div>
+                            <div className="font-semibold">{testimonial.name}</div>
+                            <div className="text-sm text-muted-foreground">{testimonial.role}</div>
+                            <div className="text-sm text-primary">{testimonial.company}</div>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </div>
     </section>
