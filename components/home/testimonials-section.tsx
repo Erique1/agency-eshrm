@@ -86,28 +86,44 @@ export function TestimonialsSection() {
   // Default testimonials as fallback
   const defaultTestimonials: TestimonialData[] = [
     {
-      name: "Amara Okonkwo",
-      role: "Chief People Officer",
-      company: "TechAfrica Solutions",
+      name: "Mr Muponda",
+      role: "Director",
+      company: "July Motion Pvt Ltd",
       content:
-        "ESHRM has been instrumental in transforming our HR function. Their expertise and dedication to understanding our unique challenges resulted in solutions that truly work for our organization.",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&h=200&fit=crop&crop=face",
+        "ESHRM transformed our HR processes in Harare, helping us build a stronger team foundation. Their local expertise and understanding of Zimbabwe's business environment was invaluable for our growth in the motion industry.",
+      image: "/images/team.jpg",
     },
     {
-      name: "David Mensah",
-      role: "Managing Director",
-      company: "GrowthPath Industries",
+      name: "Mr Taruvinga",
+      role: "Director",
+      company: "Strange Love Enterprises",
       content:
-        "Working with ESHRM was a game-changer for our company. They helped us build a performance management system that has significantly improved our team's productivity and engagement.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face",
+        "Working with ESHRM has been a game-changer for our Zimbabwe-based operations. Their tailored HR solutions helped us navigate the unique challenges of our industry while maintaining compliance with local regulations.",
+      image: "/images/culture.jpg",
     },
     {
-      name: "Fatima Al-Hassan",
-      role: "HR Director",
-      company: "Sahel Investments",
+      name: "Dr Kamunda",
+      role: "Director",
+      company: "Montague Radiology Centre",
       content:
-        "The training programs delivered by ESHRM exceeded our expectations. Our leadership team is now more confident, capable, and aligned with our strategic goals.",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face",
+        "ESHRM's expertise in healthcare HR management was exactly what we needed. They helped us develop policies that support our medical staff while ensuring we meet Zimbabwe's healthcare standards.",
+      image: "/images/digital.jpg",
+    },
+    {
+      name: "Mr Manyemba",
+      role: "Director",
+      company: "Brooklyn Bright Construction",
+      content:
+        "The HR training programs from ESHRM have significantly improved our project management capabilities. Their understanding of Zimbabwe's construction sector helped us build a more skilled workforce.",
+      image: "/images/leadership.jpg",
+    },
+    {
+      name: "Mr Masawi",
+      role: "Headmaster",
+      company: "Lyndel House College",
+      content:
+        "ESHRM provided outstanding support for our educational institution. Their HR solutions helped us attract and retain quality teaching staff, contributing to the academic excellence at Lyndel House College.",
+      image: "/images/afric.jpg",
     },
   ]
 

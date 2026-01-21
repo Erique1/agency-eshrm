@@ -78,10 +78,10 @@ export function CaseStudiesSection() {
   // Default content as fallback
   const defaultContent = {
     title: { content: { text: "Our Impact" } },
-    subtitle: { content: { text: "Real Results for Real Organizations" } },
+    subtitle: { content: { text: "Real Results for Zimbabwean Organizations" } },
     description: {
       content: {
-        text: "Discover how we've helped organizations across Africa transform their HR functions and achieve remarkable results."
+        text: "Discover how we've helped leading Zimbabwean organizations transform their HR functions and achieve remarkable results in the local business environment."
       }
     }
   }
@@ -91,32 +91,64 @@ export function CaseStudiesSection() {
   // Default case studies as fallback
   const defaultCaseStudies: CaseStudyData[] = [
     {
-      title: "Digital Transformation of HR Operations",
-      client: "Leading Fintech Company",
-      industry: "Financial Services",
+      title: "HR Digital Transformation at July Motion",
+      client: "July Motion Pvt Ltd - Mr Muponda",
+      industry: "Motion Industry",
       results: [
-        "40% reduction in HR administrative time",
-        "85% employee satisfaction improvement",
-        "60% faster onboarding",
+        "45% reduction in HR administrative workload",
+        "80% improvement in employee onboarding efficiency",
+        "30% increase in staff retention rates",
       ],
       image: "/images/digital.jpg",
-      href: "/case-studies/digital-transformation-hr",
+      href: "/case-studies/july-motion-hr-transformation",
     },
     {
-      title: "Culture Transformation Program",
-      client: "Pan-African Manufacturing Corp",
-      industry: "Manufacturing",
-      results: ["35% increase in engagement", "50% reduction in turnover", "25% productivity boost"],
+      title: "Culture Building at Strange Love Enterprises",
+      client: "Strange Love Enterprises - Mr Taruvinga",
+      industry: "Entertainment",
+      results: [
+        "40% boost in team engagement scores",
+        "55% reduction in staff turnover",
+        "25% improvement in workplace productivity",
+      ],
       image: "/images/culture.jpg",
-      href: "/case-studies/culture-transformation",
+      href: "/case-studies/strange-love-culture-transformation",
     },
     {
-      title: "Leadership Development Initiative",
-      client: "Regional Healthcare Network",
+      title: "Healthcare HR Excellence at Montague Radiology",
+      client: "Montague Radiology Centre - Dr Kamunda",
       industry: "Healthcare",
-      results: ["90% participants promoted", "65% leadership readiness improvement", "75% internal promotions"],
+      results: [
+        "95% medical staff retention rate",
+        "70% faster recruitment for specialized roles",
+        "85% compliance with Zimbabwe healthcare regulations",
+      ],
       image: "/images/leadership.jpg",
-      href: "/case-studies/leadership-development",
+      href: "/case-studies/montague-radiology-hr-excellence",
+    },
+    {
+      title: "Construction Workforce Development",
+      client: "Brooklyn Bright Construction - Mr Manyemba",
+      industry: "Construction",
+      results: [
+        "50% increase in skilled worker availability",
+        "35% reduction in project timelines",
+        "60% improvement in safety compliance",
+      ],
+      image: "/images/team.jpg",
+      href: "/case-studies/brooklyn-bright-workforce-development",
+    },
+    {
+      title: "Educational HR Management at Lyndel House",
+      client: "Lyndel House College - Mr Masawi",
+      industry: "Education",
+      results: [
+        "90% teacher retention rate",
+        "40% increase in student satisfaction",
+        "75% improvement in administrative efficiency",
+      ],
+      image: "/images/afric.jpg",
+      href: "/case-studies/lyndel-house-educational-hr",
     },
   ]
 
