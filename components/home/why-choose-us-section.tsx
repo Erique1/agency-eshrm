@@ -84,7 +84,7 @@ export function WhyChooseUsSection() {
     },
     image: {
       content: {
-        src: "/professional-consulting-meeting-diverse-team.jpg",
+        src: "/images/team.jpg",
         alt: "ESHRM Consulting Team at Work"
       }
     }
