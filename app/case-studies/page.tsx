@@ -8,130 +8,104 @@ import { ArrowRight } from "lucide-react"
 
 const caseStudies = [
   {
-    id: "digital-transformation-hr",
-    title: "Digital Transformation of HR Operations",
-    client: "Leading Fintech Company",
-    industry: "Financial Services",
-    challenge:
-      "Outdated HR processes causing inefficiencies and employee dissatisfaction in a rapidly growing fintech startup with 20+ employees across 5 countries.",
-    solution:
-      "Implemented a comprehensive HR digital transformation including automated workflows, self-service portals, and data-driven decision making tools.",
-    results: [
-      "40% reduction in HR administrative time",
-      "85% employee satisfaction improvement",
-      "60% faster onboarding process",
-      "30% reduction in HR costs",
-    ],
-    testimonial:
-      "ESHRM transformed our HR operations completely. We're now able to scale efficiently while maintaining excellent employee experience.",
-    testimonialAuthor: "Sarah Chen, CHRO",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-    services: ["Custom HR Solutions", "HR Policy Development"],
-  },
-  {
-    id: "culture-transformation",
-    title: "Culture Transformation Program",
-    client: "Pan-African Manufacturing Corp",
+    id: "july-motion-hr-transformation",
+    title: "HR Digital Transformation at July Motion",
+    client: "July Motion Pvt Ltd - Mr Muponda",
     industry: "Manufacturing",
     challenge:
-      "Siloed departments, low employee engagement, and resistance to change in a traditional manufacturing company with operations in 8 African countries.",
+      "Traditional HR processes hindering growth and efficiency in Zimbabwe's manufacturing sector.",
     solution:
-      "Designed and implemented a comprehensive culture transformation program focusing on collaboration, innovation, and employee empowerment through structured change management.",
+      "Implemented modern HR digital tools and streamlined processes tailored for the manufacturing industry.",
     results: [
-      "35% increase in employee engagement",
-      "50% reduction in turnover",
-      "25% improvement in productivity",
-      "Cross-functional collaboration improved by 60%",
+      "45% reduction in HR administrative workload",
+      "80% improvement in employee onboarding efficiency",
+      "30% increase in staff retention rates",
     ],
     testimonial:
-      "The cultural shift has been remarkable. Our teams now collaborate seamlessly, and innovation has become part of our DNA.",
-    testimonialAuthor: "Michael Osei, CEO",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop",
-    services: ["Organizational Development", "Training & Workshops"],
+      "ESHRM's digital transformation has revolutionized our HR operations in Harare.",
+    testimonialAuthor: "Mr Muponda, Director",
+    image: "/images/digital.jpg",
+    services: ["Custom HR Solutions", "Digital Transformation"],
   },
   {
-    id: "leadership-development",
-    title: "Leadership Development Initiative",
-    client: "Regional Healthcare Network",
-    industry: "Healthcare",
-    challenge:
-      "Leadership gaps and succession planning concerns in a growing healthcare organization with 15 facilities and 3,000+ employees.",
-    solution:
-      "Created a customized leadership development program including coaching, mentoring, and experiential learning for high-potential employees at all levels.",
-    results: [
-      "90% of participants promoted within 18 months",
-      "Leadership readiness score improved by 65%",
-      "Internal promotion rate increased to 75%",
-      "Leadership bench strength doubled",
-    ],
-    testimonial:
-      "Our leadership pipeline is now stronger than ever. The program has created a culture of continuous development and growth.",
-    testimonialAuthor: "Dr. Amina Diallo, HR Director",
-    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop",
-    services: ["Training & Workshops", "Performance Management"],
-  },
-  {
-    id: "talent-strategy-retail",
-    title: "Talent Acquisition Strategy Overhaul",
-    client: "Retail Chain Expansion",
+    id: "strange-love-culture-transformation",
+    title: "Culture Building at Strange Love Enterprises",
+    client: "Strange Love Enterprises - Mr Taruvinga",
     industry: "Retail",
     challenge:
-      "Difficulty attracting and retaining quality staff during rapid expansion from 50 to 200 stores across West Africa.",
+      "Building a cohesive company culture in Zimbabwe's competitive retail environment.",
     solution:
-      "Developed a comprehensive talent acquisition strategy including employer branding, streamlined hiring processes, and robust onboarding programs.",
+      "Developed comprehensive culture transformation program focusing on employee engagement and team collaboration.",
     results: [
-      "Time-to-fill reduced by 45%",
-      "Quality of hire improved by 40%",
-      "First-year turnover reduced by 35%",
-      "Employer brand recognition increased by 200%",
+      "40% boost in team engagement scores",
+      "55% reduction in staff turnover",
+      "25% improvement in workplace productivity",
     ],
     testimonial:
-      "ESHRM helped us build a talent engine that has fueled our expansion. We now attract top talent without the struggle.",
-    testimonialAuthor: "Kwame Asante, VP Human Resources",
+      "The culture transformation has created a more motivated and collaborative workforce.",
+    testimonialAuthor: "Mr Taruvinga, Director",
+    image: "/images/culture.jpg",
+    services: ["Organizational Development", "Culture Transformation"],
+  },
+  {
+    id: "montague-radiology-hr-excellence",
+    title: "Healthcare HR Excellence at Montague Radiology",
+    client: "Montague Radiology Centre - Dr Kamunda",
+    industry: "Healthcare",
+    challenge:
+      "Ensuring HR excellence in Zimbabwe's healthcare sector while meeting regulatory standards.",
+    solution:
+      "Implemented comprehensive HR policies and practices specific to healthcare operations.",
+    results: [
+      "95% medical staff retention rate",
+      "70% faster recruitment for specialized roles",
+      "85% compliance with Zimbabwe healthcare regulations",
+    ],
+    testimonial:
+      "ESHRM helped us maintain high standards in our HR practices.",
+    testimonialAuthor: "Dr Kamunda, Director",
+    image: "/images/leadership.jpg",
+    services: ["Healthcare HR", "Compliance"],
+  },
+  {
+    id: "brooklyn-bright-workforce-development",
+    title: "Construction Workforce Development",
+    client: "Brooklyn Bright Construction - Mr Manyemba",
+    industry: "Construction",
+    challenge:
+      "Developing skilled workforce for Zimbabwe's growing construction industry.",
+    solution:
+      "Created targeted training and development programs for construction sector employees.",
+    results: [
+      "50% increase in skilled worker availability",
+      "35% reduction in project timelines",
+      "60% improvement in safety compliance",
+    ],
+    testimonial:
+      "The workforce development program has significantly improved our project outcomes.",
+    testimonialAuthor: "Mr Manyemba, Director",
+    image: "/images/team.jpg",
+    services: ["Workforce Development", "Training"],
+  },
+  {
+    id: "lyndel-house-educational-hr",
+    title: "Educational HR Management at Lyndel House",
+    client: "Lyndel House College - Mr Masawi",
+    industry: "Education",
+    challenge:
+      "Effective HR management in Zimbabwe's educational institutions.",
+    solution:
+      "Developed HR strategies tailored for educational environments and teacher retention.",
+    results: [
+      "90% teacher retention rate",
+      "40% increase in student satisfaction",
+      "75% improvement in administrative efficiency",
+    ],
+    testimonial:
+      "ESHRM's HR solutions have enhanced our educational delivery.",
+    testimonialAuthor: "Mr Masawi, Headmaster",
     image: "/images/afric.jpg",
-    services: ["Talent Acquisition", "Training & Workshops"],
-  },
-  {
-    id: "compliance-banking",
-    title: "HR Compliance & Policy Modernization",
-    client: "National Bank",
-    industry: "Banking",
-    challenge:
-      "Outdated HR policies creating compliance risks and inconsistent practices across 120 branches and 5,000 employees.",
-    solution:
-      "Conducted comprehensive policy review, developed modern HR frameworks, and implemented systematic policy management across all locations.",
-    results: [
-      "100% regulatory compliance achieved",
-      "Policy-related grievances reduced by 70%",
-      "Manager decision consistency improved by 80%",
-      "Audit findings reduced by 90%",
-    ],
-    testimonial:
-      "The peace of mind from knowing we're fully compliant is invaluable. ESHRM's systematic approach transformed our HR governance.",
-    testimonialAuthor: "Fatou Ba, Chief Compliance Officer",
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop",
-    services: ["HR Policy Development", "Custom HR Solutions"],
-  },
-  {
-    id: "performance-telecom",
-    title: "Performance Management Transformation",
-    client: "Telecom Operator",
-    industry: "Telecommunications",
-    challenge:
-      "Ineffective performance management leading to unclear expectations, demotivated teams, and poor business results.",
-    solution:
-      "Designed and implemented a modern performance management system with clear KPIs, continuous feedback, and development-focused reviews.",
-    results: [
-      "Performance visibility improved by 100%",
-      "Goal achievement rate increased by 45%",
-      "Employee engagement up by 30%",
-      "High performer retention improved by 50%",
-    ],
-    testimonial:
-      "Our people now understand exactly what's expected and how they contribute to our success. The transformation has been significant.",
-    testimonialAuthor: "Jean-Pierre Mukasa, Head of People",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-    services: ["Performance Management", "Training & Workshops"],
+    services: ["Educational HR", "Staff Development"],
   },
 ]
 

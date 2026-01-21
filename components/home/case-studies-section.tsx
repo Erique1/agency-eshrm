@@ -100,7 +100,7 @@ export function CaseStudiesSection() {
         "30% increase in staff retention rates",
       ],
       image: "/images/digital.jpg",
-      href: "/case-studies",
+      href: "/case-studies/july-motion-hr-transformation",
     },
     {
       title: "Culture Building at Strange Love Enterprises",
@@ -112,7 +112,7 @@ export function CaseStudiesSection() {
         "25% improvement in workplace productivity",
       ],
       image: "/images/culture.jpg",
-      href: "/case-studies",
+      href: "/case-studies/strange-love-culture-transformation",
     },
     {
       title: "Healthcare HR Excellence at Montague Radiology",
@@ -124,7 +124,7 @@ export function CaseStudiesSection() {
         "85% compliance with Zimbabwe healthcare regulations",
       ],
       image: "/images/leadership.jpg",
-      href: "/case-studies",
+      href: "/case-studies/montague-radiology-hr-excellence",
     },
     {
       title: "Construction Workforce Development",
@@ -136,7 +136,7 @@ export function CaseStudiesSection() {
         "60% improvement in safety compliance",
       ],
       image: "/images/team.jpg",
-      href: "/case-studies",
+      href: "/case-studies/brooklyn-bright-workforce-development",
     },
     {
       title: "Educational HR Management at Lyndel House",
@@ -148,7 +148,7 @@ export function CaseStudiesSection() {
         "75% improvement in administrative efficiency",
       ],
       image: "/images/afric.jpg",
-      href: "/case-studies",
+      href: "/case-studies/lyndel-house-educational-hr",
     },
   ]
 
