@@ -144,9 +144,9 @@ export default function CaseStudiesPage() {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">20+</div>
-                <div className="text-sm text-muted-foreground">Projects Completed</div>
-              </div>
+              <div className="text-3xl font-bold text-primary">35+</div>
+              <div className="text-sm text-muted-foreground">Projects Completed</div>
+            </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary">98%</div>
                 <div className="text-sm text-muted-foreground">Client Satisfaction</div>

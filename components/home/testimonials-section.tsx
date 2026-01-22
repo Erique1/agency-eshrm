@@ -94,11 +94,11 @@ export function TestimonialsSection() {
   // Default testimonials as fallback
   const defaultTestimonials: TestimonialData[] = [
     {
-      name: "Mr Muponda",
+      name: "Mr Mundopa",
       role: "Director",
       company: "July Motion Pvt Ltd",
       content:
-        "ESHRM transformed our HR processes in Harare, helping us build a stronger team foundation. Their local expertise and understanding of Zimbabwe's business environment was invaluable for our growth in the motion industry.",
+        "ESHRM has been our trusted HR partner for 2 years, transforming our HR processes in Harare and helping us build a stronger team foundation. Their local expertise and understanding of Zimbabwe's business environment continues to be invaluable for our growth in the motion industry.",
       image: "/placeholder.svg",
     },
     {
@@ -106,7 +106,7 @@ export function TestimonialsSection() {
       role: "Director",
       company: "Strange Love Enterprises",
       content:
-        "Working with ESHRM has been a game-changer for our Zimbabwe-based operations. Their tailored HR solutions helped us navigate the unique challenges of our retail business while maintaining compliance with local regulations.",
+        "ESHRM has been our strategic HR partner for 3 years, consistently delivering exceptional results for our Zimbabwe-based operations. Their tailored HR solutions have helped us navigate the unique challenges of our retail business while ensuring full compliance with local regulations.",
       image: "/placeholder.svg",
     },
     {

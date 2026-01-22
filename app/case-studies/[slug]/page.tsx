@@ -10,7 +10,7 @@ import { ArrowRight, ArrowLeft, CheckCircle, Quote } from "lucide-react"
 const caseStudies = {
   "july-motion-hr-transformation": {
     title: "HR Digital Transformation at July Motion",
-    client: "July Motion Pvt Ltd - Mr Muponda",
+    client: "July Motion Pvt Ltd - Mr Mundopa",
     industry: "Manufacturing",
     duration: "6 months",
     teamSize: "4 consultants",
