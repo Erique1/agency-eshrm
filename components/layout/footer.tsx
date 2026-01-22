@@ -241,16 +241,11 @@ export function Footer() {
           {/* Brand Column */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
-              <div className="flex items-center gap-2">
-                <img
-                  src={theme === 'dark' ? '/logo.png' : '/logo-light.png'}
-                  alt="ESHRM Logo"
-                  className="h-8 w-auto object-contain"
-                />
-                <span className="font-bold text-xl text-background">
-                  ESHRM
-                </span>
-              </div>
+              <img
+                src={theme === 'dark' ? '/logo.png' : '/logo-light.png'}
+                alt="ESHRM Logo"
+                className="h-8 w-auto object-contain"
+              />
             </Link>
             <p className="text-sm text-muted-foreground">
               {footerContent.brand_description?.content?.text ||

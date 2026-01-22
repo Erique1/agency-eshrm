@@ -149,22 +149,20 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2">
-          <div className="flex items-center gap-2">
-            <img
-              src={theme === 'dark' ? '/logo-light.png' : '/logo.png'}
-              alt={headerContent.brand_name?.content?.alt || "Logo"}
-              className="h-8 w-auto object-contain"
-              onError={(e) => {
-                e.currentTarget.style.display = 'none'
-                // Fallback to text if image fails
-                const fallback = e.currentTarget.parentElement?.querySelector('.brand-text')
-                if (fallback) (fallback as HTMLElement).style.display = 'block'
-              }}
-            />
-            <span className="font-bold text-xl brand-text" style={{ display: 'none' }}>
-              {headerContent.brand_name?.content?.text || "ESHRM"}
-            </span>
-          </div>
+          <img
+            src={theme === 'dark' ? '/logo-light.png' : '/logo.png'}
+            alt={headerContent.brand_name?.content?.alt || "ESHRM Logo"}
+            className="h-8 w-auto object-contain"
+            onError={(e) => {
+              e.currentTarget.style.display = 'none'
+              // Fallback to text if image fails
+              const fallback = e.currentTarget.parentElement?.querySelector('.brand-text')
+              if (fallback) (fallback as HTMLElement).style.display = 'block'
+            }}
+          />
+          <span className="font-bold text-xl brand-text" style={{ display: 'none' }}>
+            {headerContent.brand_name?.content?.text || "ESHRM"}
+          </span>
         </Link>
 
         {/* Desktop Navigation */}
