@@ -66,7 +66,7 @@ export default function TermsConditionsPage() {
 
                 <h2 className="text-2xl font-bold mt-8 mb-4">8. Governing Law</h2>
                 <p className="text-muted-foreground mb-4">
-                  These terms shall be governed by and construed in accordance with the laws of Nigeria, without regard
+                  These terms shall be governed by and construed in accordance with the laws of Zimbabwe, without regard
                   to conflict of law principles.
                 </p>
 
@@ -75,8 +75,6 @@ export default function TermsConditionsPage() {
                   For questions about these Terms & Conditions, contact us at:
                   <br />
                   Email: legal@eshrm.com
-                  <br />
-                  Address: 123 Business District, Lagos, Nigeria
                 </p>
               </div>
             </div>

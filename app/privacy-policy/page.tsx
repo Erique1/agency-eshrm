@@ -68,8 +68,6 @@ export default function PrivacyPolicyPage() {
                 </p>
                 <p className="text-muted-foreground">
                   Email: privacy@eshrm.com
-                  <br />
-                  Address: 123 Business District, Lagos, Nigeria
                 </p>
               </div>
             </div>

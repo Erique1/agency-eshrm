@@ -164,7 +164,7 @@ export default function AboutPage() {
     },
     story: {
       title: { content: { text: "Our Story" } },
-      content1: { content: { text: "Founded in 2010, ESHRM emerged from a vision to revolutionize how African businesses approach human resource management. We recognized that the unique challenges and opportunities of the African market required HR solutions tailored to local contexts while meeting global standards." } },
+      content1: { content: { text: "Founded in 2021, ESHRM emerged from a vision to revolutionize how African businesses approach human resource management. We recognized that the unique challenges and opportunities of the African market required HR solutions tailored to local contexts while meeting global standards." } },
       content2: { content: { text: "Over the years, we've grown from a small consultancy to a trusted partner for more than 20 companies in Zimbabwe. Our success is built on deep expertise, unwavering commitment to our clients, and a genuine passion for developing Zimbabwe's workforce." } },
       content3: { content: { text: "Today, ESHRM stands as a beacon of HR excellence in Africa, helping organizations build high-performing teams, develop future leaders, and create workplaces where both people and businesses thrive." } },
       story_image: { content: { src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop", alt: "ESHRM Team Collaboration" } },
@@ -480,38 +480,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Team Section */}
-        <section className="py-20 lg:py-28 bg-muted">
-          <div className="container mx-auto px-4">
-            <div className="mx-auto max-w-2xl text-center mb-16">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">
-                {aboutContent.team?.title?.content?.text || "Our Leadership Team"}
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                {aboutContent.team?.subtitle?.content?.text || "Meet the experts driving HR transformation across Africa."}
-              </p>
-            </div>
 
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {displayTeam.map((member) => (
-                <Card key={member.name} className="overflow-hidden">
-                  <div className="aspect-square overflow-hidden">
-                    <img
-                      src={member.image || "/placeholder.svg"}
-                      alt={member.name}
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-bold">{member.name}</h3>
-                    <div className="text-primary font-medium mb-3">{member.role}</div>
-                    <p className="text-sm text-muted-foreground">{member.bio}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* CTA Section */}
         <section className="py-20 lg:py-28">
