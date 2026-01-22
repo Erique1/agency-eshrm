@@ -58,8 +58,8 @@ export function MissionSection() {
     },
     countries: {
       content: {
-        value: "20+",
-        label: "African Countries"
+        value: "1",
+        label: "African Country Served"
       }
     },
     satisfaction: {

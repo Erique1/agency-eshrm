@@ -99,7 +99,7 @@ export function HeroSection() {
         indicators: [
           "4+ Years of Excellence",
           "20+ Clients Served",
-          "2+ African Countries",
+          "1 African Countries",
           "98% Client Satisfaction"
         ]
       }
