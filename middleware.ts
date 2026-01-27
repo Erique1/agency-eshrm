@@ -74,5 +74,4 @@ export const config = {
   matcher: [
     '/admin/((?!api/).)*',
   ],
-  runtime: 'nodejs',
 }
