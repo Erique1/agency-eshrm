@@ -75,8 +75,14 @@ function NewsletterForm() {
             message: "Thank you for subscribing to our newsletter!",
             serviceInterest: "Newsletter",
           }),
+        }).then((emailResponse) => {
+          if (!emailResponse.ok) {
+            console.error('Newsletter email sending failed')
+            toast.warning('Newsletter subscription confirmed, but welcome email failed. We\'ll still keep you updated!')
+          }
         }).catch((emailError) => {
           console.error('Newsletter email sending failed:', emailError)
+          toast.warning('Newsletter subscription confirmed, but welcome email failed. We\'ll still keep you updated!')
         })
 
         toast.success('Successfully subscribed to newsletter!')

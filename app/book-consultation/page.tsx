@@ -119,9 +119,14 @@ export default function BookConsultationPage() {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify(emailData),
+        }).then((emailResponse) => {
+          if (!emailResponse.ok) {
+            console.error('Email sending failed')
+            toast.warning('Booking confirmed, but email notification failed. We\'ll still contact you!')
+          }
         }).catch((emailError) => {
           console.error('Email sending failed:', emailError)
-          // Don't show error to user as the booking was successfully saved
+          toast.warning('Booking confirmed, but email notification failed. We\'ll still contact you!')
         })
 
         toast.success('Booking confirmed successfully!')

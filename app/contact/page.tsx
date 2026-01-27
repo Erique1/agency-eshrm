@@ -154,9 +154,14 @@ export default function ContactPage() {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify(formData),
+        }).then((emailResponse) => {
+          if (!emailResponse.ok) {
+            console.error('Email sending failed')
+            toast.warning('Message sent, but email notification failed. We\'ll still get back to you!')
+          }
         }).catch((emailError) => {
           console.error('Email sending failed:', emailError)
-          // Don't show error to user as the form was successfully submitted
+          toast.warning('Message sent, but email notification failed. We\'ll still get back to you!')
         })
 
         toast.success('Message sent successfully!')
