@@ -47,7 +47,7 @@ const consultationTypes = [
   {
     value: "in-person",
     label: "In-Person",
-    description: "Visit our Lagos office",
+    description: "Visit our office",
     icon: Building,
   },
 ]
@@ -307,7 +307,7 @@ export default function BookConsultationPage() {
                           required
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                          placeholder="+234 800 000 0000"
+                          placeholder="+263 7XX XXX XXX"
                         />
                       </div>
                       <div className="space-y-2">
