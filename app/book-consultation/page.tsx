@@ -140,9 +140,15 @@ export default function BookConsultationPage() {
   const isStep1Valid = formData.name && formData.email && formData.phone && formData.service
   const isStep2Valid = date && formData.time && formData.consultationType
 
-  // Disable past dates and weekends
+  // Disable past dates, weekends, and dates beyond 60 days
   const disabledDays = (date: Date) => {
-    return date < new Date() || isWeekend(date)
+    const today = new Date()
+    today.setHours(0, 0, 0, 0) // Reset time to start of day
+    const checkDate = new Date(date)
+    checkDate.setHours(0, 0, 0, 0) // Reset time to start of day
+    const maxDate = addDays(today, 60)
+
+    return checkDate < today || checkDate > maxDate || isWeekend(date)
   }
 
   if (isSubmitted) {
@@ -376,8 +382,6 @@ export default function BookConsultationPage() {
                               selected={date}
                               onSelect={setDate}
                               disabled={disabledDays}
-                              fromDate={addDays(new Date(), 1)}
-                              toDate={addDays(new Date(), 60)}
                               initialFocus
                             />
                           </PopoverContent>
