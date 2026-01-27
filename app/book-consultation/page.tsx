@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-
+import dynamic from "next/dynamic"
 import { useState } from "react"
 import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
@@ -11,8 +11,13 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Calendar } from "@/components/ui/calendar"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
+
+// Dynamically import Calendar to avoid SSR issues
+const Calendar = dynamic(() => import("@/components/ui/calendar").then(mod => ({ default: mod.Calendar })), {
+  ssr: false,
+  loading: () => <div className="p-3 text-center text-muted-foreground">Loading calendar...</div>
+})
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { CheckCircle, CalendarIcon, Clock, Users, Video, Building } from "lucide-react"
 import { format, addDays, isWeekend } from "date-fns"
