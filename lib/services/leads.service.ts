@@ -17,7 +17,7 @@ export async function createLead(data: Omit<Lead, "id" | "created_at" | "updated
   const result = await query<any>(
     `INSERT INTO leads (name, email, company, message, service_interest, status)
      VALUES (?, ?, ?, ?, ?, 'new')`,
-    [data.name, data.email, data.company, data.message, data.service_interest],
+    [data.name, data.email, data.company || null, data.message || null, data.service_interest || null],
   )
   const lead = await getLeadById(result.insertId)
   return lead!

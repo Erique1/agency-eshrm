@@ -13,15 +13,16 @@ const getEmailConfig = (): EmailConfig => ({
   port: Number(process.env.SMTP_PORT) || 2525,
   user: process.env.SMTP_USER || '',
   pass: process.env.SMTP_PASSWORD || '',
-  from: process.env.SMTP_FROM || 'noreply@eshrm.africa',
+  from: process.env.SMTP_FROM || 'info@eshrm.africa',
 })
 
 const createTransporter = () => {
   const config = getEmailConfig()
+  const encryption = process.env.SMTP_ENCRYPTION || 'tls'
   return nodemailer.createTransport({
     host: config.host,
     port: config.port,
-    secure: false, // true for 465, false for other ports
+    secure: config.port === 465 || encryption === 'ssl', // true for 465 or SSL, false for other ports
     auth: {
       user: config.user,
       pass: config.pass,

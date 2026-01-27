@@ -7,6 +7,7 @@ import { useTheme } from "next-themes"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Linkedin, Twitter, Facebook, Mail, Phone, MapPin } from "lucide-react"
+import { toast } from "sonner"
 import type { ContentBlock } from "@/lib/types"
 
 interface FooterContent {
@@ -35,6 +36,77 @@ interface ContactInfoData {
   type: string
   value: string
   label?: string
+}
+
+function NewsletterForm() {
+  const [email, setEmail] = useState("")
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!email) return
+
+    setIsSubmitting(true)
+
+    try {
+      const response = await fetch('/api/leads', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: "Newsletter Subscriber",
+          email: email,
+          message: "Newsletter subscription request",
+          service_interest: "Newsletter",
+        }),
+      })
+
+      if (response.ok) {
+        // Send newsletter confirmation email
+        fetch('/api/send-contact-email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            name: "Newsletter Subscriber",
+            email: email,
+            message: "Thank you for subscribing to our newsletter!",
+            serviceInterest: "Newsletter",
+          }),
+        }).catch((emailError) => {
+          console.error('Newsletter email sending failed:', emailError)
+        })
+
+        toast.success('Successfully subscribed to newsletter!')
+        setEmail("")
+      } else {
+        toast.error('Failed to subscribe. Please try again.')
+      }
+    } catch (error) {
+      console.error('Error subscribing to newsletter:', error)
+      toast.error('An error occurred. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
+  return (
+    <form onSubmit={handleSubmit} className="flex gap-2">
+      <Input
+        type="email"
+        placeholder="Enter your email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        required
+        className="bg-background/10 border-muted-foreground/20 text-background placeholder:text-muted-foreground"
+      />
+      <Button type="submit" size="sm" disabled={isSubmitting}>
+        {isSubmitting ? "..." : "Subscribe"}
+      </Button>
+    </form>
+  )
 }
 
 export function Footer() {
@@ -330,16 +402,7 @@ export function Footer() {
             <h4 className="mb-2 text-sm font-semibold">
               {footerContent.newsletter_title?.content?.text || "Subscribe to our newsletter"}
             </h4>
-            <form className="flex gap-2">
-              <Input
-                type="email"
-                placeholder="Enter your email"
-                className="bg-background/10 border-muted-foreground/20 text-background placeholder:text-muted-foreground"
-              />
-              <Button type="submit" size="sm">
-                Subscribe
-              </Button>
-            </form>
+            <NewsletterForm />
           </div>
         </div>
 
