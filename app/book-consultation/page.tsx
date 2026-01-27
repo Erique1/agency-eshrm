@@ -1,6 +1,6 @@
 "use client"
 
-import type React from "react"
+import React from "react"
 import dynamic from "next/dynamic"
 import { useState } from "react"
 import { Header } from "@/components/layout/header"
@@ -72,6 +72,12 @@ export default function BookConsultationPage() {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isClient, setIsClient] = useState(false)
+
+  // Ensure date picker only renders on client to avoid SSR issues
+  React.useEffect(() => {
+    setIsClient(true)
+  }, [])
 
   const handleNext = () => {
     if (step < 3) setStep(step + 1)
